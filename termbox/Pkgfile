@@ -1,0 +1,19 @@
+# Description:  simple API for text-based interfaces
+# URL:  https://github.com/nsf/termbox
+# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Depends on:  
+
+name=termbox
+version=1.1.0
+release=1
+source=(https://github.com/nsf/$name/archive/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    ./waf configure --prefix=/usr
+    ./waf
+    ./waf install --destdir=$PKG
+}
+# vim: set ft=sh ts=4 et:
+
