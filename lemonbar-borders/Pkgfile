@@ -1,0 +1,30 @@
+# Description:  lemonbar with configurable borders
+# URL:  https://github.com/dark-yux/bar
+# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Depends on: xorg-libxcb 
+
+name=lemonbar-borders
+version=git-08de101
+sversion=08de101b458827f969f659e8da6c8d1d2bd573fb
+release=1
+source=()
+
+gitsource=https://github.com/dark-yux/bar
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+# vim: set ft=sh ts=4 et:
+
