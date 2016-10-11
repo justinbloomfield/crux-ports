@@ -1,0 +1,21 @@
+# Description:  A window switcher, run dialog and dmenu replacement
+# URL:  https://davedavenport.github.io/rofi/
+# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Depends on: xorg-xcb-util-xrm xorg-libxkbcommon startup-notification 
+
+name=rofi
+version=1.2.0
+release=1
+source=(https://github.com/DaveDavenport/$name/releases/download/$version/rofi-1.2.0.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+# vim: set ft=sh ts=4 et:
+
