@@ -1,0 +1,8 @@
+#
+# /etc/ports/poq.httpup: PoQ's ports collection
+#
+
+ROOT_DIR=/usr/ports/poq
+URL=https://raw.github.com/justinbloomfield/crux-ports/master
+
+# End of file
