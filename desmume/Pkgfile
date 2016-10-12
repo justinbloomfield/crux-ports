@@ -1,0 +1,21 @@
+# Description:  Nintendo DS emulator
+# URL:  http://desmume.org/download/
+# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Depends on:  
+
+name=desmume
+version=0.9.11
+release=1
+source=(https://sourceforge.net/projects/$name/files/desmume/$version/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+# vim: set ft=sh ts=4 et:
+
