@@ -2,11 +2,12 @@ d:thinglaunch
 d:xorg-xcb-util-xrm
 d:termbox
 d:skroll
+d:mono
 d:rofi
 f:9e654a32d29b2aeca4a0580dcdc7160d:thinglaunch/Pkgfile
 f:8fea5986d8e362335a879d35f0229d1f:thinglaunch/.md5sum
 f:2f4a4a035e8922062dfec04799b05fd2:thinglaunch/.footprint
-f:e151a8058c6617c0f72a1d9fbb98240e:xorg-xcb-util-xrm/Pkgfile
+f:7ce8f3a15d8b2c58ce19edba68fdc8bd:xorg-xcb-util-xrm/Pkgfile
 f:f30e9fabb3e9e02da71e123cbf2a66b0:xorg-xcb-util-xrm/.md5sum
 f:80e849824bbe614b2a87b956bf7fa46a:xorg-xcb-util-xrm/.footprint
 f:f047df8ba2de304871a1fb4ea20a65de:poq.httpup
@@ -16,6 +17,9 @@ f:487d33bb88d4f822e43ea5256735729d:termbox/.footprint
 f:f6c33a1c12be55b86c4eb45c1085baa4:skroll/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:skroll/.md5sum
 f:8d14b9ae8f9bf5c10060cc1ca7cbdc4b:skroll/.footprint
+f:0e05b26e2545977cb691391022d76887:mono/Pkgfile
+f:836eae82e5eaf2e5628b7da77c95b3a3:mono/.md5sum
+f:7140952ecc9621b9929488cc0c39218e:mono/.footprint
 f:85144779b0e60e080516a0f880b032b7:rofi/Pkgfile
 f:924ae9bf04f35fca33ee09d20981b6d8:rofi/.md5sum
 f:23b98db51dec7885fd4a1523489eefc8:rofi/.footprint

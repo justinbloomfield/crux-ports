@@ -1,6 +1,6 @@
 # Description:  utility functions for the X resource manager
 # URL:  https://github.com/Airblader/xcb-util-xrm/
-# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Maintainer:  piecesofquiet < jbloomfield at live dot com >
 # Depends on:  
 
 name=xorg-xcb-util-xrm
