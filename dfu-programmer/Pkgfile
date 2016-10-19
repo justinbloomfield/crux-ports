@@ -1,0 +1,14 @@
+# Description: Device Firmware Update based USB programmer for Atmel chips with a USB bootloader
+# Depends on:
+name=dfu-programmer
+version=0.7.1
+release=1
+source=(https://github.com/$name/$name/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./bootstrap.sh
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}
