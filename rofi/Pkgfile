@@ -1,6 +1,6 @@
 # Description:  A window switcher, run dialog and dmenu replacement
 # URL:  https://davedavenport.github.io/rofi/
-# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Maintainer:  piecesofquiet < jbloomfield at live dot com >
 # Depends on: xorg-xcb-util-xrm xorg-libxkbcommon startup-notification 
 
 name=rofi
