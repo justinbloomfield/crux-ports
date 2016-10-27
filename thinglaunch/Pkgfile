@@ -1,6 +1,7 @@
 # Description:  simple launcher
 # URL:  http://git.r-36.net/thinglaunch/
-# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Maintainer:  piecesofquiet < jbloomfield at live dot com >
+# Depends on: xorg-libxcb 
 
 name=thinglaunch
 version=2.4
