@@ -4,22 +4,11 @@
 # Depends on: 
 
 name=windowchef
-version=git-679a6b7
-sversion=679a6b7
+version=0.2
 release=1
-source=()
-gitsource=https://github.com/tudurom/windowchef
+source=(https://github.com/tudurom/$name/archive/v$version.tar.gz)
 
 build () {
-      cd $PKGMK_SOURCE_DIR
-      if cd $name; then
-         git reset --hard
-         git pull $gitsource
-      else
-         git clone $gitsource $name
-      fi
-
-      git checkout $sversion
-
+      cd $name-$version
       make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
 }
