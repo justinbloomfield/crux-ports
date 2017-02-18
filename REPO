@@ -3,6 +3,7 @@ d:mono
 d:windowchef
 d:qutebrowser
 d:rofi
+d:xrq
 d:unclutter-xfixes
 d:dfu-programmer
 d:termbox
@@ -23,6 +24,10 @@ f:effab9962726546a9131b5e585be45a0:qutebrowser/.footprint
 f:e51b413115b92788270693c0ac779b98:rofi/.md5sum
 f:bcf4e4812a6d44552611c23bb951537e:rofi/Pkgfile
 f:438714b16feb79aeb15c749a0f87becc:rofi/.footprint
+f:f047df8ba2de304871a1fb4ea20a65de:poq.httpup
+f:d41d8cd98f00b204e9800998ecf8427e:xrq/.md5sum
+f:ff27a8ff6abb053c66c6f0d536fff151:xrq/Pkgfile
+f:31ab25ec5b85d570f79813eeb87d2683:xrq/.footprint
 f:c13a77adfdb5600d94bebd9ebf80fdb9:unclutter-xfixes/.md5sum
 f:1fa904b379b5f093a561e4ad83fcf584:unclutter-xfixes/Pkgfile
 f:2386f2ebda6c7ada8b47768b98433f7e:unclutter-xfixes/.footprint
