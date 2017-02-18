@@ -4,9 +4,9 @@
 # Depends on: xorg-xcb-util-xrm xorg-libxkbcommon startup-notification 
 
 name=rofi
-version=1.2.0
+version=1.3.0
 release=1
-source=(https://github.com/DaveDavenport/$name/releases/download/$version/rofi-1.2.0.tar.gz)
+source=(https://github.com/DaveDavenport/$name/releases/download/$version/$name-$version.tar.gz)
 
 build() {
     cd $name-$version
