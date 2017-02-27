@@ -18,9 +18,6 @@ f:7140952ecc9621b9929488cc0c39218e:mono/.footprint
 f:192a772a2e609af27501f33ff044553c:windowchef/.md5sum
 f:aa16a333b5388c9d326d41d329c4fbc8:windowchef/Pkgfile
 f:41dfc7944c73e72e36db72d70458c228:windowchef/.footprint
-f:5e2ac65a69320866d376dbd5715f14cf:qutebrowser/.md5sum
-f:02b2b8b1995317b3a9324e018c3d3491:qutebrowser/Pkgfile
-f:effab9962726546a9131b5e585be45a0:qutebrowser/.footprint
 f:e51b413115b92788270693c0ac779b98:rofi/.md5sum
 f:bcf4e4812a6d44552611c23bb951537e:rofi/Pkgfile
 f:438714b16feb79aeb15c749a0f87becc:rofi/.footprint
