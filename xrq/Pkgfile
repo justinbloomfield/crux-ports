@@ -1,6 +1,6 @@
 # Description:  Tool for querying the X Resources Database
 # URL:  https://github.com/arianon/xrq
-# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Maintainer:  poq <jbloomfield at live dot com>
 # Depends on:  
 
 name=xrq

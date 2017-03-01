@@ -1,6 +1,6 @@
 # Description:  simple API for text-based interfaces
 # URL:  https://github.com/nsf/termbox
-# Maintainer:  piecesofquiet < jbloomfield at live dot com>
+# Maintainer:  poq <jbloomfield at live dot com>
 # Depends on:  
 
 name=termbox

@@ -1,7 +1,7 @@
 # Description: utility for hiding the X cursor, but this time not shit
 # URL: https://github.com/Airblader/unclutter-xfixes
-# Maintainer: piecesofquiet < jbloomfield at live dot com >
-# Depends on: xorg-libxfixes libev
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: xorg-libxfixes libev asciidoc
 
 name=unclutter-xfixes
 version=1.2

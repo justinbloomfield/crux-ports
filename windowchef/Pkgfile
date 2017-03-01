@@ -1,6 +1,6 @@
 # Description: stacking window manager that cooks windows with orders from the Waitron 
 # URL: https://github.com/tudurom/windowchef
-# Maintainer: piecesofquiet < jbloomfield at live dot com >
+# Maintainer: poq <jbloomfield at live dot com>
 # Depends on: 
 
 name=windowchef
