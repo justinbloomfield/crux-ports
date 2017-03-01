@@ -1,0 +1,22 @@
+# Description:  C# bindings for GTK
+# URL:  http://www.mono-project.com/docs/gui/gtksharp/
+# Maintainer:  poq <jbloomfield at live dot com>
+# Depends on: gtk 
+
+name=gtk-sharp
+version=2.12.42
+release=1
+source=(https://download.mono-project.com/sources/${name}212/gtk-sharp-$version.tar.gz)
+#        https://download.mono-project.com/sources/gtk-sharp212/gtk-sharp-2.12.42.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+# vim: set ft=sh ts=4 et:
+
