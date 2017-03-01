@@ -3,6 +3,7 @@ d:skroll
 d:xrq
 d:windowchef
 d:termbox
+d:disputils
 d:xorg-xcb-util-xrm
 d:dfu-programmer
 d:rofi
@@ -24,6 +25,9 @@ f:192a772a2e609af27501f33ff044553c:windowchef/.md5sum
 f:487d33bb88d4f822e43ea5256735729d:termbox/.footprint
 f:d785c22fbfa14155a2786f3fb76bbd2c:termbox/Pkgfile
 f:8d7c5b0746250f0e185aefa9fa09830f:termbox/.md5sum
+f:6ed582f19d40ab61e1917c4ab8ec240f:disputils/.footprint
+f:3581aabab4ad8253e37bb9390fe076b4:disputils/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:disputils/.md5sum
 f:80e849824bbe614b2a87b956bf7fa46a:xorg-xcb-util-xrm/.footprint
 f:128344b0647fb625c5f1b0200bbb155f:xorg-xcb-util-xrm/Pkgfile
 f:f30e9fabb3e9e02da71e123cbf2a66b0:xorg-xcb-util-xrm/.md5sum

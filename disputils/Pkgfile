@@ -1,0 +1,30 @@
+# Description:  Set of utilities for querying information about connected X displays
+# URL:  https://github.com/tudurom/disputils
+# Maintainer:  poq <jbloomfield at live dot com>
+# Depends on: wmutils 
+
+name=disputils
+version=git-5ca96f
+sversion=5ca96f6
+release=1
+source=()
+
+gitsource=https://github.com/tudurom/disputils
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+# vim: set ft=sh ts=4 et:
+
