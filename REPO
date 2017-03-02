@@ -2,6 +2,7 @@ d:mono
 d:skroll
 d:scanmem
 d:xrq
+d:gameconqueror
 d:windowchef
 d:termbox
 d:disputils
@@ -23,6 +24,10 @@ f:4362c50f73eb5bcaadc341d4645c1775:scanmem/.md5sum
 f:31ab25ec5b85d570f79813eeb87d2683:xrq/.footprint
 f:477f670b12d8861d522720e0ca217169:xrq/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:xrq/.md5sum
+f:e8a47384b79199b871426040c8049c0b:gameconqueror/.footprint
+f:a71f3c7c3acb355875ce4e6045b86392:gameconqueror/Pkgfile
+f:4362c50f73eb5bcaadc341d4645c1775:gameconqueror/.md5sum
+f:a70d26dc745c07ccb7b41fd97e2092a2:gameconqueror/README
 f:41dfc7944c73e72e36db72d70458c228:windowchef/.footprint
 f:c2c2a312ca894bbc1441df7208e2e7b3:windowchef/Pkgfile
 f:192a772a2e609af27501f33ff044553c:windowchef/.md5sum

@@ -1,0 +1,22 @@
+# Description:  scanmem + GUI
+# URL:  https://github/scanmem/scanmem
+# Maintainer:  poq <jbloomfield at live dot com>
+# Depends on: intltool python3 gtk3 polkit py3cairo pygobject-gtk3 
+
+name=gameconqueror
+version=0.16
+release=1
+source=(https://github.com/scanmem/scanmem/archive/v$version.tar.gz)
+
+build() {
+    cd scanmem-$version
+    ./autogen.sh
+    ./configure --prefix=/usr --enable-gui
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+# vim: set ft=sh ts=4 et:
+
