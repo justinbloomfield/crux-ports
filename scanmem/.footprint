@@ -1,0 +1,33 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/scanmem
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/scanmem/
+-rw-r--r--	root/root	usr/include/scanmem/commands.h
+-rw-r--r--	root/root	usr/include/scanmem/list.h
+-rw-r--r--	root/root	usr/include/scanmem/maps.h
+-rw-r--r--	root/root	usr/include/scanmem/scanmem.h
+-rw-r--r--	root/root	usr/include/scanmem/scanroutines.h
+-rw-r--r--	root/root	usr/include/scanmem/show_message.h
+-rw-r--r--	root/root	usr/include/scanmem/targetmem.h
+-rw-r--r--	root/root	usr/include/scanmem/value.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libscanmem.a
+-rwxr-xr-x	root/root	usr/lib/libscanmem.la
+lrwxrwxrwx	root/root	usr/lib/libscanmem.so -> libscanmem.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libscanmem.so.1 -> libscanmem.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libscanmem.so.1.0.0
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/doc/
+drwxr-xr-x	root/root	usr/share/doc/scanmem/
+-rw-r--r--	root/root	usr/share/doc/scanmem/README
+drwxr-xr-x	root/root	usr/share/locale/
+drwxr-xr-x	root/root	usr/share/locale/ja/
+drwxr-xr-x	root/root	usr/share/locale/ja/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ja/LC_MESSAGES/GameConqueror.mo
+drwxr-xr-x	root/root	usr/share/locale/ru/
+drwxr-xr-x	root/root	usr/share/locale/ru/LC_MESSAGES/
+-rw-r--r--	root/root	usr/share/locale/ru/LC_MESSAGES/GameConqueror.mo
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/scanmem.1.gz
