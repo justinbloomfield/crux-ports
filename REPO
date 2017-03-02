@@ -1,5 +1,6 @@
 d:mono
 d:skroll
+d:scanmem
 d:xrq
 d:windowchef
 d:termbox
@@ -16,6 +17,9 @@ f:836eae82e5eaf2e5628b7da77c95b3a3:mono/.md5sum
 f:8d14b9ae8f9bf5c10060cc1ca7cbdc4b:skroll/.footprint
 f:7194f5121cff989c3642965686936da5:skroll/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:skroll/.md5sum
+f:ddc136ee43ca926bd2de533660163c9b:scanmem/.footprint
+f:7cf54d376e52da0555ef3f60be041749:scanmem/Pkgfile
+f:4362c50f73eb5bcaadc341d4645c1775:scanmem/.md5sum
 f:31ab25ec5b85d570f79813eeb87d2683:xrq/.footprint
 f:477f670b12d8861d522720e0ca217169:xrq/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:xrq/.md5sum
