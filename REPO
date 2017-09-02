@@ -1,5 +1,7 @@
 d:unclutter-xfixes
+d:lemonbar-xft
 d:xrq
+d:obs-studio
 d:rofi
 d:termbox
 d:windowchef
@@ -15,9 +17,15 @@ d:skroll
 f:2102e42b8eef9069d6a0f1b1cd9479a2:unclutter-xfixes/Pkgfile
 f:c13a77adfdb5600d94bebd9ebf80fdb9:unclutter-xfixes/.md5sum
 f:2386f2ebda6c7ada8b47768b98433f7e:unclutter-xfixes/.footprint
+f:04a548ac88f859189126c176bb49538b:lemonbar-xft/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:lemonbar-xft/.md5sum
+f:eff5abd4a9dc6b034f4d5a40b30d9810:lemonbar-xft/.footprint
 f:477f670b12d8861d522720e0ca217169:xrq/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:xrq/.md5sum
 f:31ab25ec5b85d570f79813eeb87d2683:xrq/.footprint
+f:181ed2afe75b7c1bd18471383e15f3da:obs-studio/Pkgfile
+f:d948a94ca3dc47254cca253629b0e111:obs-studio/.md5sum
+f:5512f495759943ad706032917d853a39:obs-studio/.footprint
 f:f047df8ba2de304871a1fb4ea20a65de:poq.httpup
 f:39ee7c6668fa480587ea30fe88d84f4b:rofi/Pkgfile
 f:e51b413115b92788270693c0ac779b98:rofi/.md5sum
@@ -27,7 +35,7 @@ f:8d7c5b0746250f0e185aefa9fa09830f:termbox/.md5sum
 f:487d33bb88d4f822e43ea5256735729d:termbox/.footprint
 f:ecdd9cd4aa1af9397124342a0b064522:windowchef/Pkgfile
 f:58a18b081c58d2cbe2d59a2bcff14b8f:windowchef/.md5sum
-f:c4d5f95a4ceacd0ac4fde82497518f66:windowchef/.footprint
+f:2a17d829adfb2ce7a1a443200c45117d:windowchef/.footprint
 f:128344b0647fb625c5f1b0200bbb155f:xorg-xcb-util-xrm/Pkgfile
 f:f30e9fabb3e9e02da71e123cbf2a66b0:xorg-xcb-util-xrm/.md5sum
 f:80e849824bbe614b2a87b956bf7fa46a:xorg-xcb-util-xrm/.footprint
@@ -46,7 +54,7 @@ f:72bb34ed90dbc76c88b588bc7c14d96d:dfu-programmer/.md5sum
 f:443e44bb72fa447ecd54dbf69102c6b4:dfu-programmer/.footprint
 f:f94e61446fc33431d2f4244a7488f9f0:gtk-sharp/Pkgfile
 f:56d585b3b0c23f11fe3cfdacb6782689:gtk-sharp/.md5sum
-f:9958c0f3234676b780265cc7cd34f13e:gtk-sharp/.footprint
+f:2ceae28f5087a7a24103246f1c462cb0:gtk-sharp/.footprint
 f:6aae2f59d8978b9136a7cc80bac8e970:mono/Pkgfile
 f:836eae82e5eaf2e5628b7da77c95b3a3:mono/.md5sum
 f:7140952ecc9621b9929488cc0c39218e:mono/.footprint
