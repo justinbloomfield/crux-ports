@@ -1,0 +1,31 @@
+# -*-shell-*-
+# Description:  lemonbar fork with xft support
+# URL:  https://github.com/krypt-n/bar
+# Maintainer:  poq <jbloomfield at live dot com>
+# Depends on: xorg-libxft 
+
+name=lemonbar-xft
+version=git-043ad47
+sversion=043ad47
+release=1
+source=()
+
+gitsource=https://github.com/krypt-n/bar
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+
+

@@ -1,0 +1,24 @@
+# Description:  Open Broadcaster Software Studio
+# URL:  https://obsproject.com
+# Maintainer:  poq <jbloomfield at live dot com>
+# Depends on: ffmpeg xorg-libx11 x264 freetype fontconfig xorg-libxcomposite xorg-libxinerama qt5 curl
+
+name=obs-studio
+version=20.0.1
+release=1
+source=(https://github.com/jp9000/$name/archive/$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    mkdir build
+    cd build
+    cmake -DUNIX_STRUCTURE=1 -DCMAKE_INSTALL_PREFIX=/usr ..
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+# vim: set ft=sh ts=4 et:
+
