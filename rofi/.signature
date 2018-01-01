@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/poq.pub
+RWTvjSMGJfzFDvChcmqBDBVIxXc6uGvkI8TVeeN56u7uGgMfKJSYZu83Q7xxv0pNkRpknk3V6laafbeBDQ7QXI4qLifJb47XnQw=
+SHA256 (Pkgfile) = 847a8a3795d86daa0668b2fc0fce9e2d0c72b42c40bf6dc8b4acb51d0eb825f4
+SHA256 (.footprint) = 7a4b0a08dd3ca97b2318d13beaabbf3bd7198d0d14bd1705226f16c38180f688
+SHA256 (rofi-1.3.0.tar.gz) = 28ea15208801e65f904b2e1bf804078bf85b917cc79b060ff46d43d9307097cd

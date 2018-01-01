@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/poq.pub
+RWTvjSMGJfzFDu+vKP6X3+tRTdqMhno1qK95t0INRSYUSl7jbGDtkwnXCLiAp4xZUmF2KwsaZDrDUJNJKO9T76D5d7dklmdWqAM=
+SHA256 (Pkgfile) = fd90eb1ef9e5bc3ca2f08a53494e2d2f73471a4d1a38aa617cc94c112071a5bb
+SHA256 (.footprint) = 43d8b9e1b6358dbc7c847af6fe25ab42d2a6f1ddf433552da6c8969ce4d3adde
+SHA256 (v0.16.tar.gz) = a776afda5d1589977b8fbfae48aaf06e6382e34dc455fb1b47141fbcc7a88c75
