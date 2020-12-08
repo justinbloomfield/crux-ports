@@ -1,10 +1,10 @@
 # Description: stacking window manager that cooks windows with orders from the Waitron 
 # URL: https://github.com/tudurom/windowchef
 # Maintainer: poq <jbloomfield at live dot com>
-# Depends on: 
+# Depends on: xorg-libxcb
 
 name=windowchef
-version=0.4.1
+version=0.5.2
 release=1
 source=(https://github.com/tudurom/$name/archive/v$version.tar.gz)
 

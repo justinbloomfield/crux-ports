@@ -4,7 +4,7 @@
 # Depends on: intltool python3 gtk3 polkit py3cairo pygobject-gtk3 
 
 name=gameconqueror
-version=0.16
+version=0.17
 release=1
 source=(https://github.com/scanmem/scanmem/archive/v$version.tar.gz)
 
