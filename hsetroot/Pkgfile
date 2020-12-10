@@ -1,0 +1,22 @@
+# -*-shell-*-
+# Description:  A tool which allows you to compose wallpapers for X
+# URL:  https://github.com/himdel/hsetroot/
+# Maintainer:  poq <jbloomfield at live dot com>
+# Depends on: imlib2 xorg-server 
+
+name=hsetroot
+version=1.0.2
+release=1
+source=(https://github.com/himdel/$name/archive/$version.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make LDFLAGS=-lX11
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+

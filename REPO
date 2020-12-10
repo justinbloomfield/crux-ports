@@ -15,6 +15,7 @@ d:windowchef
 d:xorg-xcb-util-xrm
 d:xrq
 d:vmware-view-client
+d:hsetroot
 f:443e44bb72fa447ecd54dbf69102c6b4:dfu-programmer/.footprint
 f:72bb34ed90dbc76c88b588bc7c14d96d:dfu-programmer/.md5sum
 f:22cb16db085c31c4433bb41fa82bed96:dfu-programmer/Pkgfile
@@ -68,3 +69,6 @@ f:477f670b12d8861d522720e0ca217169:xrq/Pkgfile
 f:e113678a4af5bddf704cb2f1111aa3a9:vmware-view-client/.md5sum
 f:1a2df4b97ab68db786196f2e63d408e5:vmware-view-client/.footprint
 f:5f42f120fae86b2e52189004cfcf0236:vmware-view-client/Pkgfile
+f:63061c6712ad1d11f1808c476dd515e5:hsetroot/Pkgfile
+f:d64797667b8f07a033863f005796ba42:hsetroot/.footprint
+f:95968bbcef9f41af19db6b4ce7102542:hsetroot/.md5sum
