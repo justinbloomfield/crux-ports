@@ -23,8 +23,6 @@ build() {
     tar xf $vmh-PCoIP-$version.x64.tar.gz 
     cd $vmh-PCoIP-$version.x64
     cp -ar lib/* $PKG/usr/lib    
-   # link libudev
-    ln -sf /lib/libudev.so.1 /lib/libudev.so.0
 }
 
 
