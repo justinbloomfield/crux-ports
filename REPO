@@ -6,7 +6,6 @@ d:lemonbar-xft
 d:mono
 d:obs-studio
 d:rofi
-d:scanmem
 d:skroll
 d:termbox
 d:thinglaunch
@@ -50,10 +49,6 @@ f:438714b16feb79aeb15c749a0f87becc:rofi/.footprint
 f:e51b413115b92788270693c0ac779b98:rofi/.md5sum
 f:39ee7c6668fa480587ea30fe88d84f4b:rofi/Pkgfile
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:rofi/.signature
-f:5779915bea28c9156d169f649233756e:scanmem/.footprint
-f:e632a1fa5b161c3bc6dfe665466d9634:scanmem/.md5sum
-f:249571bd93a6571d076518d6b10e9f98:scanmem/Pkgfile
-f:44fa498b4f0efe1f714bfedd6ec6d1fb:scanmem/.signature
 f:8d14b9ae8f9bf5c10060cc1ca7cbdc4b:skroll/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:skroll/.md5sum
 f:7194f5121cff989c3642965686936da5:skroll/Pkgfile
