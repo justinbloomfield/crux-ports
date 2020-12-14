@@ -1,7 +1,7 @@
 # Description:  scanmem + GUI
 # URL:  https://github/scanmem/scanmem
 # Maintainer:  poq <jbloomfield at live dot com>
-# Depends on: intltool python3 gtk3 polkit py3cairo pygobject-gtk3 
+# Depends on: intltool gtk3 polkit python-gobject 
 
 name=gameconqueror
 version=0.17

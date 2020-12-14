@@ -1,2 +1,1 @@
 be sure that shell is in /etc/shells
-also I need to make a patch to change /usr/bin/env python to /usr/bin/python3

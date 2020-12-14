@@ -26,9 +26,9 @@ f:3581aabab4ad8253e37bb9390fe076b4:disputils/Pkgfile
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:disputils/.signature
 f:9bec4c615b7149af94fc21896ad9ba09:gameconqueror/.footprint
 f:e632a1fa5b161c3bc6dfe665466d9634:gameconqueror/.md5sum
-f:296129bfee2b6c4a82e966482ae1f4bd:gameconqueror/Pkgfile
-f:4e97054bfdad234b140e36fdb0267aac:gameconqueror/README
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:gameconqueror/.signature
+f:7e054339358292f2b2ac703e75847c10:gameconqueror/Pkgfile
+f:a70d26dc745c07ccb7b41fd97e2092a2:gameconqueror/README
 f:2ceae28f5087a7a24103246f1c462cb0:gtk-sharp/.footprint
 f:56d585b3b0c23f11fe3cfdacb6782689:gtk-sharp/.md5sum
 f:f94e61446fc33431d2f4244a7488f9f0:gtk-sharp/Pkgfile
