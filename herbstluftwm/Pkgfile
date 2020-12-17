@@ -1,0 +1,22 @@
+# Description: Manual X11 tiling window manager
+# URL: https://herbstluftwm.org
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: asciidoc xorg-libxinerama xorg-libxrandr
+
+name=herbstluftwm
+version=0.9.0
+release=1
+source=(https://$name.org/tarballs/herbstluftwm-$version.tar.gz)
+
+build() {
+    mkdir build
+    cd build
+    cmake -DCMAKE_INSTALL_PREFIX=/usr ../$name-$version
+    make
+    make DESTDIR=$PKG install
+#        PREFIX=/usr \
+#        MANDIR=/usr/man\
+#        install
+}
+
+

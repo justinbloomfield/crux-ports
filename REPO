@@ -15,6 +15,7 @@ d:xorg-xcb-util-xrm
 d:xrq
 d:vmware-view-client
 d:hsetroot
+d:herbstluftwm
 f:443e44bb72fa447ecd54dbf69102c6b4:dfu-programmer/.footprint
 f:72bb34ed90dbc76c88b588bc7c14d96d:dfu-programmer/.md5sum
 f:22cb16db085c31c4433bb41fa82bed96:dfu-programmer/Pkgfile
@@ -86,3 +87,7 @@ f:d64797667b8f07a033863f005796ba42:hsetroot/.footprint
 f:95968bbcef9f41af19db6b4ce7102542:hsetroot/.md5sum
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:hsetroot/.signature
 f:ad1d5170de30699ed4f8619befc6c733:poq.pub
+f:2ae4a4fdc5e9a8e5d263d2fde167cd9c:herbstluftwm/.md5sum
+f:2d554931add9811a548b9922f7e60c4c:herbstluftwm/Pkgfile
+f:1cf8af30e1beb22d2fa99a4d4db98b82:herbstluftwm/.footprint
+f:44fa498b4f0efe1f714bfedd6ec6d1fb:herbstluftwm/.signature
