@@ -1,0 +1,33 @@
+# -*-sh-*-
+# Description:  Tool and library for managing Microsoft Windows Dynamic Disks
+# URL:  https://github.com/mdbooth/libldm
+# Maintainer:  poq <jbloomfield at live dot com>
+# Depends on: json-glib gtk-doc 
+
+name=libldm
+version=git-63883d8
+sversion=63883d8
+release=1
+source=(libldm)
+
+gitsource=https://github.com/mdbooth/libldm
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+    
+    ./autogen.sh --prefix=/usr
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+    install -D -m 755 $SRC/libldm $PKG/etc/rc.d/libldm
+}
+
+

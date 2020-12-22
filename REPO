@@ -16,6 +16,7 @@ d:xrq
 d:vmware-view-client
 d:hsetroot
 d:herbstluftwm
+d:libldm
 f:443e44bb72fa447ecd54dbf69102c6b4:dfu-programmer/.footprint
 f:72bb34ed90dbc76c88b588bc7c14d96d:dfu-programmer/.md5sum
 f:22cb16db085c31c4433bb41fa82bed96:dfu-programmer/Pkgfile
@@ -91,3 +92,8 @@ f:2ae4a4fdc5e9a8e5d263d2fde167cd9c:herbstluftwm/.md5sum
 f:2d554931add9811a548b9922f7e60c4c:herbstluftwm/Pkgfile
 f:1cf8af30e1beb22d2fa99a4d4db98b82:herbstluftwm/.footprint
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:herbstluftwm/.signature
+f:761ceda2a8baa659d96aea69a39eb504:libldm/Pkgfile
+f:b235c9e7c41a8db460b4bbb1bb43b99f:libldm/.footprint
+f:11e43d0ff403c73806fad7753d9cf5b5:libldm/.md5sum
+f:44fa498b4f0efe1f714bfedd6ec6d1fb:libldm/.signature
+f:bc21626f996975f149f8575af6c3b252:libldm/libldm
