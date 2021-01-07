@@ -1,0 +1,18 @@
+# -*-sh-mode-*-
+# Description: Graphical Soulseek client
+# URL: https://github.com/Nicotine-Plus/nicotine-plus
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: python3-gobject gtk3 python3-setuptools
+
+name=nicotine-plus
+version=2.2.2
+release=1
+source=(https://github.com/Nicotine-Plus/$name/archive/$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    python3 setup.py install --root="$PKG"
+}
+
+

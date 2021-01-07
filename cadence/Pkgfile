@@ -1,0 +1,31 @@
+# -*-sh-*-
+# Description: Set of tools useful for audio production (JACK)
+# URL: https://kx.studio/Applications:Cadence
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: pulseaudio, qt5, python3-pyqt5, jack, python-dbus 
+
+name=cadence
+version=git-c167f35
+sversion=c167f35
+release=1
+source=()
+
+gitsource=https://github.com/falktx/cadence
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+    make
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+
+

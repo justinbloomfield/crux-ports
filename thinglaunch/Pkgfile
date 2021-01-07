@@ -1,15 +1,27 @@
-# Description:  simple launcher
-# URL:  http://git.r-36.net/thinglaunch/
-# Maintainer:  poq <jbloomfield at live dot com>
+# -*-sh-*-
+# Description: simple launcher
+# URL: http://git.r-36.net/thinglaunch/
+# Maintainer: poq <jbloomfield at live dot com>
 # Depends on: xorg-libxcb 
 
 name=thinglaunch
-version=2.4
-release=1
-source=(http://git.r-36.net/$name/snapshot/$name-$version.tar.gz)
+version=git-89c06a1
+release=89c06a15709368c76ffde3c77291b1d9cf880cb9
+source=()
+
+gitsource=git://r-36.net/thinglaunch
 
 build() {
-    cd $name-$version
+    cd $PKGMK_SOURCE_DIR
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
 
     make
     make DESTDIR=$PKG \
@@ -17,5 +29,3 @@ build() {
         MANDIR=/usr/man\
         install
 }
-# vim: set ft=sh ts=4 et:
-
