@@ -1,0 +1,21 @@
+# Description: Spreadsheet Calculator IMproved
+# URL: https://github.com/andmarti1424/sc-im
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:gnuplot libxml2 libzip lua 
+
+name=sc-im
+version=0.8.2
+release=1
+source=(https://github.com/andmarti1424/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    make -C src
+    make -C src DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+# vim: set ft=sh ts=4 et:

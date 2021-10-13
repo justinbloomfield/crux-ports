@@ -1,0 +1,21 @@
+# Description: RDP client
+# URL: https://github.com/rdesktop/rdesktop
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: 
+
+name=rdesktop
+version=1.9.0
+release=1
+source=(https://github.com/$name/rdesktop/releases/download/v$version/rdesktop-1.9.0.tar.gz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr --disable-credssp --disable-smartcard
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+# vim: set ft=sh ts=4 et:
