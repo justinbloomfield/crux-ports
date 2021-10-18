@@ -10,7 +10,6 @@ d:unclutter-xfixes
 d:gameconqueror
 d:dfu-programmer
 d:rdesktop
-d:helvum
 d:xorg-xcb-util-xrm
 d:windowchef
 d:herbstluftwm
@@ -69,9 +68,6 @@ f:443e44bb72fa447ecd54dbf69102c6b4:dfu-programmer/.footprint
 f:d40402ca0e2f91f4da30ce95f4d6acac:rdesktop/Pkgfile
 f:009ec10bace2495ecde54ec09ca9c2c3:rdesktop/.md5sum
 f:fdd20768202c19973d9074d9d61a3526:rdesktop/.footprint
-f:361cdfe62f7a63eb7f35548a51bb73a5:helvum/Pkgfile
-f:776c87ce0b48c46e18019dbdac2339ad:helvum/.md5sum
-f:1014bd2bbe90b3a3c15148316532303a:helvum/.footprint
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:xorg-xcb-util-xrm/.signature
 f:128344b0647fb625c5f1b0200bbb155f:xorg-xcb-util-xrm/Pkgfile
 f:f30e9fabb3e9e02da71e123cbf2a66b0:xorg-xcb-util-xrm/.md5sum
