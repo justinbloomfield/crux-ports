@@ -1,0 +1,29 @@
+# Description: Tool to configure and sync configurations to servers
+# URL: git://bitreich.org/drist
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:  
+
+name=drist
+version=git-c4d5a55
+sversion=c4d5a55
+release=1
+source=()
+
+gitsource=git://bitreich.org/drist
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+# vim: set ft=sh ts=4 et:

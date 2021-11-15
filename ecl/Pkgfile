@@ -1,0 +1,21 @@
+# Description: Embeddable Common Lisp
+# URL: https://common-lisp.net/project/ecl
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: 
+
+name=ecl
+version=21.2.1
+release=1
+source=(https://common-lisp.net/project/$name/static/files/release/ecl-$version.tgz)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+# vim: set ft=sh ts=4 et:

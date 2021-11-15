@@ -1,0 +1,29 @@
+# Description: Common LISP Interactive Client for gopher
+# URL: https://gopherproxy.meulie.net/bitreich.org/1/scm/clic
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: ecl 
+
+name=clic
+version=git-6627ba6
+sversion=6627ba6
+release=1
+source=()
+
+gitsource=git://bitreich.org/clic
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+# vim: set ft=sh ts=4 et:
