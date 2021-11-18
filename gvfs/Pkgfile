@@ -1,0 +1,40 @@
+# Description: A userspace virtual filesystem designed to work with the I/O abstractions of gio (glib)
+# URL: http://projects.gnome.org/
+# Packager: Matt Housh, jaeger at crux dot ninja
+# Maintainer: jolupa, jlpavon at me dot com
+# Depends on: glib gcr samba libgcrypt polkit docbook-xsl libgphoto2 libsecret meson ninja libsoup
+
+name=gvfs
+version=1.48.1
+release=2
+source=(http://download.gnome.org/sources/$name/${version:0:4}/$name-$version.tar.xz)
+
+build() {
+
+  cd $name-$version
+
+  meson build \
+    --prefix=/usr \
+    --libexecdir=/usr/lib/$name \
+    -Darchive=true \
+    -Dudisks2=true \
+    -Dlogind=false \
+    -Dsystemduserunitdir=no \
+    -Dtmpfilesdir=no \
+    -Ddnssd=false \
+    -Dfuse=true \
+    -Dafc=false \
+    -Dgoa=false \
+    -Dbluray=false \
+    -Dcdda=false \
+    -Dgphoto2=false \
+    -Dgoogle=false \
+    -Dmtp=true \
+    -Dnfs=true \
+    -Dsmb=true
+
+  DESTDIR=$PKG ninja -C build install
+
+  rm -r $PKG/usr/share/locale
+
+}
