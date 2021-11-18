@@ -1,0 +1,31 @@
+# Description: HP Linux Imaging and Printing
+# URL: https://sourceforge.net/projects/hplip
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:cups libusb sane foomatic-filters 
+
+name=hplip
+version=3.21.8
+release=1
+source=(https://sourceforge.net/projects/$name/files/hplip/$version/hplip-3.21.8.tar.gz)
+
+build() {
+    cd $name-$version
+    
+    ./configure --prefix=/usr \
+      --disable-doc-build \
+      --enable-lite-build \
+      --disable-network-build \
+      --with-hpppddir=/usr/share/cups/model \
+      --disable-fax-build \
+      --enable-hpijs-install \
+      --enable-foomatic-ppd-install \
+      --enable-foomatic-drv-install
+
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+# vim: set ft=sh ts=4 et:

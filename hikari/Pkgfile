@@ -1,0 +1,27 @@
+# Description: Stacking Wayland compositor inspired by cwm
+# URL: https://hikari.acmelabs.space
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:wlroots xorg-xwayland libucl slurp wayland-protocols bmake
+
+name=hikari
+version=2.3.2
+release=1
+source=(https://$name.acmelabs.space/releases/$name-$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    bmake PREFIX=usr \
+          WITH_ALL=YES \
+          ETC_PREFIX=/ \
+          WITH_POSIX_C_SOURCE=YES 
+#          WITH_SCREENCOPY=YES \
+#          WITH_GAMMACONTROL=YES \
+#          WITH_LAYERSHELL=YES 
+#          WITH_VIRTUAL_INPUT=YES 
+
+    bmake DESTDIR=$PKG ETC_PREFIX=/ PREFIX=/usr WITHOUT_SUID=YES install
+          
+}
+
+# vim: set ft=sh ts=4 et:

@@ -1,0 +1,31 @@
+# Description: Universal Config Language
+# URL: https://github.com/vstakhov/libucl
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:  
+
+name=libucl
+version=git-e6c5d80
+sversion=e6c5d80
+release=1
+source=()
+
+gitsource=https://github.com/vstakhov/libucl
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    ./autogen.sh
+    ./configure --prefix=/usr --sysconfdir=/etc
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+# vim: set ft=sh ts=4 et:
