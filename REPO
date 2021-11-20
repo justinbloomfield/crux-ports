@@ -19,6 +19,7 @@ d:windowchef
 d:herbstluftwm
 d:cadence
 d:hsetroot
+d:dragon
 d:disputils
 d:thinglaunch
 d:termbox
@@ -106,6 +107,9 @@ f:44fa498b4f0efe1f714bfedd6ec6d1fb:hsetroot/.signature
 f:92a2f6e7f6acf3aae7f5d18fb0194e39:hsetroot/Pkgfile
 f:95968bbcef9f41af19db6b4ce7102542:hsetroot/.md5sum
 f:d64797667b8f07a033863f005796ba42:hsetroot/.footprint
+f:f5f1aac8813e52e6be2989f6ea60e700:dragon/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:dragon/.md5sum
+f:cf80a37d53086710f303d31ea2c612cb:dragon/.footprint
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:disputils/.signature
 f:3581aabab4ad8253e37bb9390fe076b4:disputils/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:disputils/.md5sum
@@ -129,7 +133,9 @@ f:c657742f4d1a68f8c46016d25472e655:nicotine-plus/.footprint
 f:a742b9901595e858a6f81731828ef7f0:clic/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:clic/.md5sum
 f:6dcbf4b66c395ec7d8f9347bbf60a0c8:clic/.footprint
-f:ab2ef897489aeb0973248c6465010362:waybar/Pkgfile
+f:c3ce04dd1384232a41a0181946cc6d15:waybar/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:waybar/.md5sum
+f:5773aa62585c36b4fd70b3cb11fa1d7e:waybar/.footprint
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:skroll/.signature
 f:ad85f89535dfba967cdb91892468aca7:skroll/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:skroll/.md5sum
