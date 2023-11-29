@@ -5,10 +5,10 @@
 # Depends on: json-glib gtk-doc 
 
 name=libldm
-version=git-63883d8
-sversion=63883d8
+version=git-674da9b
+sversion=674da9b
 release=1
-source=(libldm)
+source=(ldmtool)
 
 gitsource=https://github.com/mdbooth/libldm
 

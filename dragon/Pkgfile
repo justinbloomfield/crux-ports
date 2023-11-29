@@ -1,29 +1,18 @@
+# -*-sh-*-
 # Description: simple drag-and-drop source/sink for X or Wayland
 # URL: https://github.com/mwh/dragon
 # Maintainer: poq <jbloomfield at live dot com>
 # Depends on: gtk3 
 
 name=dragon
-version=git-db7200f
-sversion=db7200f
+version=1.2.0
 release=1
-source=()
+source=(https://github.com/mwh/$name/archive/refs/tags/v$version.tar.gz)
 
-gitsource=https://github.com/mwh/dragon
+
 
 build() {
-    cd $PKGMK_SOURCE_DIR
-
-    if cd $name; then
-        git reset --hard
-        git pull $gitsource
-    else
-        git clone $gitsource $name
-        cd $name
-    fi
-
-    git checkout $sversion
+    cd $name-$version
 
     make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
 }
-# vim: set ft=sh ts=4 et:
