@@ -1,0 +1,17 @@
+# -*-sh-*-
+# Description: A customisable and feature-rich GTK bar for wlroots compositors, written in Rust.
+# URL: https://github.com/JakeStanger/ironbar
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:gtk-layer-shell rust 
+
+name=ironbar
+version=0.13.0
+release=1
+source=(https://github.com/JakeStanger/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+		cargo build --release
+		chmod +x target/release/ironbar
+		install -Dm 755 target/release/ironbar $PKG/usr/bin/ironbar
+}

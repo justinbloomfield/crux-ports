@@ -1,0 +1,21 @@
+# -*-sh-*-
+# Description: Command-line utility and library for controlling media players
+# URL: https://github.com/altdesktop/playerctl
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:glib gobject-introspection meson ninja
+
+name=playerctl
+version=2.4.1
+release=1
+source=(https://github.com/altdesktop/$name/archive/refs/tags/v$version.tar.gz
+				playerctld)
+
+build() {
+    cd $name-$version
+    meson --prefix=/usr -Dgtk-doc=false build
+    export DESTDIR=$PKG
+    ninja -C build install
+		install -Dm 0755 $SRC/playerctld $PKG/etc/rc.d/playerctld
+}
+
+

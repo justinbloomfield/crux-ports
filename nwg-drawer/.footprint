@@ -1,0 +1,16 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/nwg-drawer
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/nwg-drawer/
+drwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/audio-video.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/development.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/game.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/graphics.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/internet-and-network.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/office.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/other.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/system-tools.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/desktop-directories/utility.directory
+-rwxr-xr-x	root/root	usr/share/nwg-drawer/drawer.css

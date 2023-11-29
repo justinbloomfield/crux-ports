@@ -1,0 +1,19 @@
+# -*-sh-*-
+# Description: DBus library for Python, inspired by pydbus
+# URL: https://github/rhinstaller/dasbus
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:python3-gobject 
+
+name=python3-dasbus
+version=1.7
+release=1
+source=(https://github.com/rhinstaller/dasbus/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd dasbus-$version
+    python3 setup.py build --build-lib=build/python
+    python3 setup.py build --build-lib=build/python \
+            install --root=$PKG --optimize=1 --skip-build
+}
+
+

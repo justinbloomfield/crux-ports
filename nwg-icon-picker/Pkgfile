@@ -1,0 +1,20 @@
+# -*-sh-*-
+# Description: GTK icon browser
+# URL: https://github.com/nwg-piotr/nwg-icon-picker
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:gtk3 python3 python3-gobject python3-setuptools 
+
+name=nwg-icon-picker
+version=0.1.0
+release=1
+source=(https://github.com/nwg-piotr/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    python3 setup.py install --root=$PKG --optimize=1
+    install -D -t $PKG/usr/share/pixmaps nwg-icon-picker.svg
+    install -D -t $PKG/usr/share/applications nwg-icon-picker.desktop
+}
+
+

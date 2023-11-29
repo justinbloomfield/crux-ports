@@ -1,0 +1,32 @@
+drwxr-xr-x	poq/poq	etc/
+drwxr-xr-x	poq/poq	etc/rc.d/
+-rwxr-xr-x	poq/poq	etc/rc.d/playerctld
+drwxr-xr-x	poq/poq	usr/
+drwxr-xr-x	poq/poq	usr/bin/
+-rwxr-xr-x	poq/poq	usr/bin/playerctl
+-rwxr-xr-x	poq/poq	usr/bin/playerctld
+drwxr-xr-x	poq/poq	usr/include/
+drwxr-xr-x	poq/poq	usr/include/playerctl/
+-rw-r--r--	poq/poq	usr/include/playerctl/playerctl-enum-types.h
+-rw-r--r--	poq/poq	usr/include/playerctl/playerctl-player-manager.h
+-rw-r--r--	poq/poq	usr/include/playerctl/playerctl-player-name.h
+-rw-r--r--	poq/poq	usr/include/playerctl/playerctl-player.h
+-rw-r--r--	poq/poq	usr/include/playerctl/playerctl-version.h
+-rw-r--r--	poq/poq	usr/include/playerctl/playerctl.h
+drwxr-xr-x	poq/poq	usr/lib/
+drwxr-xr-x	poq/poq	usr/lib/girepository-1.0/
+-rw-r--r--	poq/poq	usr/lib/girepository-1.0/Playerctl-2.0.typelib
+lrwxrwxrwx	poq/poq	usr/lib/libplayerctl.so -> libplayerctl.so.2
+lrwxrwxrwx	poq/poq	usr/lib/libplayerctl.so.2 -> libplayerctl.so.2.4.1
+-rwxr-xr-x	poq/poq	usr/lib/libplayerctl.so.2.4.1
+drwxr-xr-x	poq/poq	usr/lib/pkgconfig/
+-rw-r--r--	poq/poq	usr/lib/pkgconfig/playerctl.pc
+drwxr-xr-x	poq/poq	usr/share/
+drwxr-xr-x	poq/poq	usr/share/dbus-1/
+drwxr-xr-x	poq/poq	usr/share/dbus-1/services/
+-rw-r--r--	poq/poq	usr/share/dbus-1/services/org.mpris.MediaPlayer2.playerctld.service
+drwxr-xr-x	poq/poq	usr/share/gir-1.0/
+-rw-r--r--	poq/poq	usr/share/gir-1.0/Playerctl-2.0.gir
+drwxr-xr-x	poq/poq	usr/share/man/
+drwxr-xr-x	poq/poq	usr/share/man/man1/
+-rw-r--r--	poq/poq	usr/share/man/man1/playerctl.1.gz

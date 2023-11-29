@@ -1,0 +1,20 @@
+diff -pruN nwg-drawer-0.4.3.orig/Makefile nwg-drawer-0.4.3/Makefile
+--- nwg-drawer-0.4.3.orig/Makefile	2023-11-29 14:05:15.780083199 +1100
++++ nwg-drawer-0.4.3/Makefile	2023-11-29 14:05:49.399898712 +1100
+@@ -12,12 +12,11 @@ build:
+ 	go build -o bin/nwg-drawer .
+ 
+ install:
+-	-pkill -f nwg-drawer
+ 	sleep 1
+-	mkdir -p /usr/share/nwg-drawer
+-	cp -r desktop-directories /usr/share/nwg-drawer
+-	cp drawer.css /usr/share/nwg-drawer
+-	cp bin/nwg-drawer /usr/bin
++	mkdir -p $PKG/usr/share/nwg-drawer
++	cp -r desktop-directories $PKG/usr/share/nwg-drawer
++	cp drawer.css $PKG/usr/share/nwg-drawer
++	cp bin/nwg-drawer $PKG/usr/bin
+ 
+ uninstall:
+ 	rm -r /usr/share/nwg-drawer

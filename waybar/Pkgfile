@@ -1,12 +1,12 @@
 # Description: Customisable Wayland bar for wlroots-based compositors
 # URL: https://github.com/alexays/waybar
 # Maintainer: poq <jbloomfield at live dot com>
-# Depends on: gtkmm3 jsonpp wayland fmt spdlog gobject-introspection pulseaudio libnl libappindicator-gtk3 libmpdclient libdbusmenu-gtk3 libsndio wayland-protocols meson
+# Depends on: gtkmm3 jsoncpp wayland fmt spdlog gobject-introspection pulseaudio libnl libayatana-appindicator ayatana-ido libayatana-indicator libmpdclient libdbusmenu-gtk3 wayland-protocols meson
 
 name=waybar
-version=git-13fda16
-sversion=13fda16
-release=1
+version=git-48ec834
+release=48ec834
+version=1
 source=()
 
 gitsource=https://github.com/alexays/waybar
@@ -21,9 +21,6 @@ build() {
         git clone $gitsource $name
         cd $name
     fi
- 
-    git checkout $sversion
-     
 
 
     meson build --prefix=/usr

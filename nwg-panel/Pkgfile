@@ -1,0 +1,23 @@
+# -*-sh-*-
+# Description: GTK=based panel for wlroots-based Wayland compositors
+# URL: https://nwg-piotr.github.io/nwg-shell/nwg-panel
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:gtk-layer-shell gtk3 libayatana-appindicator python3-gobject python3-cairo python3-psutil python3-requests python3-six python3-xlib nwg-icon-picker playerctl
+
+name=nwg-panel
+version=0.9.17
+release=1
+source=(https://github.com/nwg-piotr/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+    
+    python3 setup.py install --root=$PKG --optimize=1
+    install -D -t $PKG/usr/share/pixmaps nwg-panel.svg
+    install -D -t $PKG/usr/share/pixmaps nwg-shell.svg
+    install -D -t $PKG/usr/share/pixmaps nwg-processes.svg
+    install -D -t $PKG/usr/share/applications nwg-panel-config.desktop
+    install -D -t $PKG/usr/share/applications nwg-processes.desktop
+}
+
+

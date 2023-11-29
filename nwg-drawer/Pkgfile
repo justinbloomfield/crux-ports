@@ -1,0 +1,24 @@
+# -*-sh-*-
+# Description: Application drawer component of nwg-shell project
+# URL: https://nwg-piotr.github.io/nwg-shell/nwg-drawer
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:go gtk-layer-shell xdg-utils 
+
+name=nwg-drawer
+version=0.4.3
+release=1
+source=(https://github.com/nwg-piotr/$name/archive/refs/tags/v$version.tar.gz
+				no_pkill.patch)
+
+build() {
+    cd $name-$version
+	patch -p 1 -i $SRC/no_pkill.patch
+    make get
+    make build
+    install -d $PKG/usr/share/nwg-drawer/desktop-directories
+    install -D desktop-directories/* $PKG/usr/share/nwg-drawer/desktop-directories/
+    install -D -t $PKG/usr/share/nwg-drawer drawer.css
+    install -D -t $PKG/usr/bin bin/nwg-drawer
+}
+
+

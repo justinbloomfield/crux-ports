@@ -1,0 +1,22 @@
+# -*-sh-*-
+# Description: GTK3 settings editor, targeted at wlroots-based Wayland compositors.
+# URL: https://nwg-piotr.github.io/nwg-shell/nwg-look
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:go gtk3 
+
+name=nwg-look
+version=0.2.5
+release=1
+source=(https://github.com/nwg-piotr/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    make build
+    make DESTDIR=$PKG \
+         PREFIX=/usr \
+         MANDIR=/usr/man\
+         install
+}
+
+

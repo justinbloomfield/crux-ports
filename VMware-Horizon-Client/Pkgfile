@@ -3,26 +3,26 @@
 # URL:  https://my.vmware.com/en/web/vmware/downloads/details?downloadGroup=CART21FQ2_LIN_800_TARBALL__URL__productId=1027__URL__rPId=54514
 # Maintainer:  poq <jbloomfield at live dot com>
 # Depends on:  
-
-name=vmware-view-client
-version=2006-8.0.0-16522670
+name=VMware-Horizon-Client
+version=2309.1-8.11.1-22775487
 release=1
-source=(https://download3.vmware.com/software/view/viewclients/CART21FQ2/$name-linux-$version.tar.gz)
+source=(https://download3.vmware.com/software/CART24FQ4_LIN_2309.1_TARBALL/$name-Linux-$version.tar.gz)
 vmh=VMware-Horizon
 
 build() {
-    cd $name-linux-$version/x64
-    tar xf $vmh-Client-$version.x86_64.tar.gz
-    cd $vmh-Client-$version.x86_64
+    cd $name-Linux-$version/x64
+    tar xf $name-$version.x64.tar.gz
+    cd $name-$version.x64/usr
     mkdir -p $PKG/usr/{bin,lib,share/doc/vmware-horizon,share/locale}
     install -D bin/* $PKG/usr/bin 
     cp -ar lib/* $PKG/usr/lib
-    install -D doc/* $PKG/usr/share/doc/vmware-horizon
+    #install -D share/doc/* $PKG/usr/share/doc/vmware-horizon
     cp -ar share/locale/* $PKG/usr/share/locale
-    cd ..
+    install -D share/applications/* $PKG/usr/share/applications
+    cd ../..
     tar xf $vmh-PCoIP-$version.x64.tar.gz 
     cd $vmh-PCoIP-$version.x64
-    cp -ar lib/* $PKG/usr/lib    
+    cp -ar usr/lib/* $PKG/usr/lib    
 }
 
 

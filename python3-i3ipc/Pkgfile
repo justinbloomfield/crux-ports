@@ -1,0 +1,19 @@
+# -*-sh-*-
+# Description: Python library to control i3wm and sway
+# URL: https://github.com/altdesktop/i3ipc-python
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:python3-setuptools 
+
+name=python3-i3ipc
+version=2.2.1
+release=1
+source=(https://github.com/altdesktop/i3ipc-python/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd i3ipc-python-$version
+		python3 setup.py build --build-lib=build/python
+		python3 setup.py build --build-lib=build/python \
+			install --root=$PKG --optimize=1 --skip-build
+}
+
+
