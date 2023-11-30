@@ -1,0 +1,37 @@
+# -*-sh-*-
+# Description: Open-source client for PlayStation Remote Play
+# URL: https://git.sr.ht/~thestr4ng3r/chiaki
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: qt5 protobuf sdl2
+
+name=chiaki
+version=git-8911a447
+sversion=8911a447
+release=1
+source=()
+
+gitsource=https://git.sr.ht/~thestr4ng3r/chiaki/
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+    git submodule update --init
+    test -d build || mkdir build
+    cd build
+    cmake .. 
+    make  DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+

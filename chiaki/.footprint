@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/local/
+drwxr-xr-x	root/root	usr/local/bin/
+-rwxr-xr-x	root/root	usr/local/bin/chiaki
+drwxr-xr-x	root/root	usr/local/share/
+drwxr-xr-x	root/root	usr/local/share/applications/
+-rw-r--r--	root/root	usr/local/share/applications/chiaki.desktop
+drwxr-xr-x	root/root	usr/local/share/icons/
+drwxr-xr-x	root/root	usr/local/share/icons/hicolor/
+drwxr-xr-x	root/root	usr/local/share/icons/hicolor/512x512/
+drwxr-xr-x	root/root	usr/local/share/icons/hicolor/512x512/apps/
+-rw-r--r--	root/root	usr/local/share/icons/hicolor/512x512/apps/chiaki.png
+drwxr-xr-x	root/root	usr/local/share/metainfo/
+-rw-r--r--	root/root	usr/local/share/metainfo/re.chiaki.Chiaki.appdata.xml

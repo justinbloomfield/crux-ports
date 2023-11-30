@@ -34,6 +34,7 @@ d:xeyes
 d:gopsuinfo
 d:nwg-displays
 d:chiaki
+d:chiaki-git
 f:d9b2f0b89c0890db4a88798c91d5d297:cadence/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:cadence/.md5sum
 f:b1323627e2da6904d374405f2897d289:cadence/.signature
@@ -156,4 +157,8 @@ f:add95f36d5e915d680c6a60a3bf98571:gopsuinfo/.md5sum
 f:06dc757b9b790e01ebf87ab29b693e5d:nwg-displays/Pkgfile
 f:d6f00ef23a4a4cba14caaa6a0d7faf01:nwg-displays/.md5sum
 f:39a619090d8992aa7fe2f6e58ac366ee:nwg-displays/.footprint
-f:db56d589c30b83da8ebc0b9242849ca4:chiaki/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:chiaki/.md5sum
+f:680a2fff15c4a672a1845ec41884fa73:chiaki/Pkgfile
+f:5970068b78e2bd936c280b48bb01d675:chiaki/.footprint
+f:328805b75e729b1e3530ce805c932557:chiaki/README
+f:5c216faf554b69ab3d6bcf49bd4f8f74:chiaki-git/Pkgfile
