@@ -1,0 +1,19 @@
+# -*-sh-*-
+# Description: Output management utility for wlroots-based Wayland compositors
+# URL: https://github.com/nwg-piotr/nwg-displays
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:gtk-layer-shell python3-i3ipc python3-setuptools 
+
+name=nwg-displays
+version=0.3.9
+release=1
+source=(https://github.com/nwg-piotr/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+    python3 setup.py install --root=$PKG --optimize=1
+    install -D -t $PKG/usr/share/pixmaps nwg-displays.svg
+    install -D -t $PKG/usr/share/applications nwg-displays.desktop
+}
+
+

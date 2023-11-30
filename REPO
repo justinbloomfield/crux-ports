@@ -32,6 +32,8 @@ d:python3-dasbus
 d:nwg-drawer
 d:xeyes
 d:gopsuinfo
+d:nwg-displays
+d:chiaki
 f:d9b2f0b89c0890db4a88798c91d5d297:cadence/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:cadence/.md5sum
 f:b1323627e2da6904d374405f2897d289:cadence/.signature
@@ -151,3 +153,7 @@ f:e50b4e9ed09d06889f32c7e9df4e9728:xeyes/Pkgfile
 f:cd07a399136b0836fccd509f84741dc8:xeyes/.footprint
 f:dc2c18387924e34d400fa639ac1f65bc:gopsuinfo/Pkgfile
 f:add95f36d5e915d680c6a60a3bf98571:gopsuinfo/.md5sum
+f:06dc757b9b790e01ebf87ab29b693e5d:nwg-displays/Pkgfile
+f:d6f00ef23a4a4cba14caaa6a0d7faf01:nwg-displays/.md5sum
+f:39a619090d8992aa7fe2f6e58ac366ee:nwg-displays/.footprint
+f:db56d589c30b83da8ebc0b9242849ca4:chiaki/Pkgfile
