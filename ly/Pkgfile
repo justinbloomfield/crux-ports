@@ -1,16 +1,16 @@
 # -*-sh-*-
-# Description: Open-source client for PlayStation Remote Play
-# URL: https://git.sr.ht/~thestr4ng3r/chiaki
+# Description: Lightweight TUI display manager
+# URL: https://github.com/fairyglade/ly
 # Maintainer: poq <jbloomfield at live dot com>
-# Depends on: ffmpeg qt5 protobuf sdl2
+# Depends on: 
 
-name=chiaki
-version=git-8911a447
-sversion=8911a447
+name=ly
+version=git-4ee2b3e
+sversion=4ee2b3e
 release=1
-source=()
+source=(ly)
 
-gitsource=https://git.sr.ht/~thestr4ng3r/chiaki/
+gitsource=https://github.com/fairyglade/ly
 
 build() {
     cd $PKGMK_SOURCE_DIR
@@ -25,13 +25,13 @@ build() {
 
     git checkout $sversion
     git submodule update --init
-    test -d build || mkdir build
-    cd build
-    cmake .. 
-    make  DESTDIR=$PKG \
+
+    make
+    make DESTDIR=$PKG \
         PREFIX=/usr \
         MANDIR=/usr/man\
         install
+	install -Dm 0755 $SRC/ly $PKG/etc/rc.d/ly
 }
 
 

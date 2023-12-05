@@ -15,7 +15,6 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/herbstclient
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/herbstluftwm/
--rw-r--r--	root/root	usr/share/doc/herbstluftwm/BUGS
 -rw-r--r--	root/root	usr/share/doc/herbstluftwm/LICENSE
 -rw-r--r--	root/root	usr/share/doc/herbstluftwm/NEWS
 drwxrwxr-x	root/root	usr/share/doc/herbstluftwm/examples/
@@ -37,12 +36,14 @@ drwxrwxr-x	root/root	usr/share/doc/herbstluftwm/examples/
 -rwxrwxr-x	root/root	usr/share/doc/herbstluftwm/examples/savestate.sh
 -rwxrwxr-x	root/root	usr/share/doc/herbstluftwm/examples/scratchpad.sh
 -rwxrwxr-x	root/root	usr/share/doc/herbstluftwm/examples/toggledualhead.sh
+-rwxrwxr-x	root/root	usr/share/doc/herbstluftwm/examples/unminimize.sh
 -rwxrwxr-x	root/root	usr/share/doc/herbstluftwm/examples/windowmenu.sh
 -rwxrwxr-x	root/root	usr/share/doc/herbstluftwm/examples/wselect.sh
--rw-r--r--	root/root	usr/share/doc/herbstluftwm/herbstclient.html
--rw-r--r--	root/root	usr/share/doc/herbstluftwm/herbstluftwm-tutorial.html
--rw-r--r--	root/root	usr/share/doc/herbstluftwm/herbstluftwm.html
 -rw-r--r--	root/root	usr/share/doc/herbstluftwm/hlwm-doc.json
+drwxr-xr-x	root/root	usr/share/doc/herbstluftwm/html/
+-rw-r--r--	root/root	usr/share/doc/herbstluftwm/html/herbstclient.html
+-rw-r--r--	root/root	usr/share/doc/herbstluftwm/html/herbstluftwm-tutorial.html
+-rw-r--r--	root/root	usr/share/doc/herbstluftwm/html/herbstluftwm.html
 drwxr-xr-x	root/root	usr/share/fish/
 drwxr-xr-x	root/root	usr/share/fish/vendor_completions.d/
 -rw-r--r--	root/root	usr/share/fish/vendor_completions.d/herbstclient.fish

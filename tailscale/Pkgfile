@@ -1,0 +1,19 @@
+# -*-sh-*-
+# Description: Private WireGuard networks made easy
+# URL: https://tailscale.com
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:go 
+
+name=tailscale
+version=1.54.1
+release=1
+source=(https://github.com/$name/tailscale/archive/refs/tags/v$version.tar.gz
+        rc.tailscaled)
+
+build() {
+    cd $name-$version
+    GOBIN=$PKG/usr/bin go install tailscale.com/cmd/tailscale{,d}
+    install -D -m 0755 $SRC/rc.tailscaled $PKG/etc/rc.d/tailscaled
+}
+
+

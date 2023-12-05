@@ -1,0 +1,23 @@
+# -*-sh-*-
+# Description: track cursor in Xorg
+# URL: https://gitlab.freedesktop.org/xorg/app/xeyes/
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: 
+
+name=xeyes
+version=1.3.0
+release=1
+source=(https://gitlab.freedesktop.org/xorg/app/xeyes/-/archive/xeyes-$version/xeyes-xeyes-1.3.0.tar.gz)
+
+build() {
+    cd $name-$name-$version
+    ./autogen.sh
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+

@@ -15,7 +15,7 @@ build() {
     meson --prefix=/usr -Dgtk-doc=false build
     export DESTDIR=$PKG
     ninja -C build install
-		install -Dm 0755 $SRC/playerctld $PKG/etc/rc.d/playerctld
+	install -Dm 0755 $SRC/playerctld $PKG/etc/rc.d/playerctld
 }
 
 
