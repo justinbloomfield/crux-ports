@@ -3,7 +3,7 @@
 
 SSD=/sbin/start-stop-daemon
 PROG=/usr/bin/tailscaled
-OPTS="-1 /var/log/tailscaled.log -2 /var/log/tailscaled.log"
+OPTS=""
 PID=/var/run/tailscaled.pid
 
 case $1 in
