@@ -1,0 +1,22 @@
+# -*-sh-*-
+# Description: Cross-platform C++ library for ASynchronous network I/O"
+# URL: https://think-async.com/Asio/
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:boost 
+
+name=asio
+version=1.28.0
+release=1
+source=(https://sourceforge.net/projects/asio/files/asio/$version%20%28Stable%29/$name-$version.tar.bz2)
+
+build() {
+    cd $name-$version
+    ./configure --prefix=/usr
+    make
+    make DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+

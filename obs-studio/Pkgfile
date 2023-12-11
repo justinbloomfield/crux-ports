@@ -2,19 +2,47 @@
 # Description:  Open Broadcaster Software Studio
 # URL:  https://obsproject.com
 # Maintainer:  poq <jbloomfield at live dot com>
-# Depends on: ffmpeg xorg-libx11 x264 freetype fontconfig xorg-libxcomposite xorg-libxinerama qt5 curl guvcview v4l-utils
+# Depends on: ffmpeg x264 x265 freetype fontconfig qt6-wayland qt6-svg qt6-websockets swig luajit v4l-utils nlohmann-json mbedtls cups
 
 name=obs-studio
-version=26.0.2
+version=git-f674d17
+sversion=f674d17
 release=1
-source=(https://github.com/obsproject/$name/archive/$version.tar.gz)
+source=()
+
+gitsource=https://github.com/obsproject/obs-studio
+CEFDIR=cef_binary_5060_linux64
 
 build() {
-    cd $name-$version
+    echo $PKGMK_SOURCE_DIR
+    cd $PKGMK_SOURCE_DIR
+    if cd $CEFDIR; then
+        echo "Downloaded CEF already"
+        cd ..
+    else
+        curl -O https://cdn-fastly.obsproject.com/downloads/cef_binary_5060_linux64.tar.bz2
+        tar -xjf ./cef_binary_5060_linux64.tar.bz2
+    fi
 
-    mkdir build
-    cd build
-    cmake -DUNIX_STRUCTURE=1 -DCMAKE_INSTALL_PREFIX=/usr ..
+    if cd $name; then
+        git reset --hard
+#        git pull $gitsource
+    else
+        git clone --recursive $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+#    git submodule update --init
+
+    if cd build; then
+        echo "Build dir exists"
+    else
+        mkdir build
+        cd build
+    fi
+    
+    cmake -DUNIX_STRUCTURE=1 -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_QSV11=OFF -DCEF_ROOT_DIR="../../$CEFDIR" -DENABLE_AJA=OFF -DENABLE_NEW_MPEGTS_OUTPUT=OFF -DENABLE_VLC=OFF -DENABLE_WEBRTC=OFF -Wno-dev ..
     make
     make DESTDIR=$PKG \
         PREFIX=/usr \

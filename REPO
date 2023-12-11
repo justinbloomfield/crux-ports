@@ -35,6 +35,8 @@ d:nwg-displays
 d:chiaki
 d:ly
 d:tailscale
+d:websocketpp
+d:asio
 f:d9b2f0b89c0890db4a88798c91d5d297:cadence/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:cadence/.md5sum
 f:b1323627e2da6904d374405f2897d289:cadence/.signature
@@ -85,10 +87,10 @@ f:59837656b134cccddada6dc88518bb3c:nicotine-plus/.footprint
 f:9f03168037554f7e3de86ac376920cc9:nicotine-plus/.md5sum
 f:4388851fef232ba1b22174c6387d619a:nicotine-plus/.signature
 f:f15c609993eb6633f350fcc87abb08ef:nicotine-plus/Pkgfile
-f:506c2b9fac2ce549d3da93e78b68a90b:obs-studio/.footprint
-f:1a5b8bb4ebd65c5ae8b83b86d034a434:obs-studio/.md5sum
+f:5aae170dced41605072145bbec072eb7:obs-studio/.footprint
+f:d41d8cd98f00b204e9800998ecf8427e:obs-studio/.md5sum
 f:671079de8a981ad3a4cf1a96430efa46:obs-studio/.signature
-f:0f319b0fb2647cd675385566f7f1cab5:obs-studio/Pkgfile
+f:f73551f3024bdc7252a3cf0287b465e3:obs-studio/Pkgfile
 f:f047df8ba2de304871a1fb4ea20a65de:poq.httpup
 f:ad1d5170de30699ed4f8619befc6c733:poq.pub
 f:fdd20768202c19973d9074d9d61a3526:rdesktop/.footprint
@@ -165,5 +167,11 @@ f:c7facd8d14e880415783405f19f7cd04:ly/Pkgfile
 f:689f607b2cc2c892044b32a4d3754f58:ly/.footprint
 f:9ebfac2f37847bab0fa3a2be79adab1a:tailscale/Pkgfile
 f:bb9fa28deff67157800be76a333d951c:tailscale/.footprint
-f:99d03742fb11bded48354b0ed851b264:tailscale/rc.tailscaled
-f:3924957037f57977d93bc303b4fdb7d2:tailscale/.md5sum
+f:eaaebf0734987093132b248f5eaea525:tailscale/.md5sum
+f:8d3c7fd8003609bfc3a87cc44cab4ee4:tailscale/rc.tailscaled
+f:1c442a95803f60f5e7583f1130a494d1:websocketpp/Pkgfile
+f:6709ad82347d0b282844a016cb9dd075:websocketpp/.md5sum
+f:10c45d0cdbdbef793b87155dac4a5943:websocketpp/.footprint
+f:67a1aee165177a29f0a9feb0c70c0b41:asio/.md5sum
+f:9f0b07d868fa680c67c545b1ab0adbba:asio/Pkgfile
+f:5f32fa82da96f46ebb286fa870c47c38:asio/.footprint

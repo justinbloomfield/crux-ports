@@ -1,0 +1,23 @@
+# -*-sh-*-
+# Description: C++/Boost Asio based websocket client/server library
+# URL: https://www.zaphoyd.com/projects/websocketpp
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:boost 
+
+name=websocketpp
+version=0.8.2
+release=1
+source=(https://github.com/zaphoyd/$name/archive/refs/tags/$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    cmake -B build -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_CPP11=ON
+    make -C build
+    make -C build DESTDIR=$PKG \
+        PREFIX=/usr \
+        MANDIR=/usr/man\
+        install
+}
+
+
