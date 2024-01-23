@@ -1,0 +1,32 @@
+# -*-sh-*-
+# Description: Dynamic tiling Wayland compositor, based on wlroots
+# URL: https://github.com/hyprwm/Hyprland
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: wlroots xorg-libevdev tomlplusplus libliftoff
+# Optional: xorg-xwayland xorg-xcb-util-error
+
+name=hyprland
+version=0.34.0
+release=1
+source=(https://github.com/hyprwm/$name/releases/download/v$version/source-v$version.tar.gz)
+
+build() {
+    cd $name-source
+    mkdir -p build
+    cmake --no-warn-unused-cli -DNO_SYSTEMD:STRING=true -DCMAKE_INSTALL_PREFIX=/usr -H./ -B ./build -G Ninja
+    cmake --build ./build --config Release --target all
+
+    mkdir -p $PKG/usr/bin/
+    mkdir -p $PKG/usr/lib/
+    mkdir -p $PKG/usr/share/wayland-sessions/
+    
+    cp ./build/Hyprland $PKG/usr/bin/
+    cp ./build/hyprctl/hyprctl $PKG/usr/bin/
+    cp ./build/hyprpm/hyprpm $PKG/usr/bin/
+    cp ./subprojects/wlroots/build/libwlroots.so.13032 $PKG/usr/lib/
+    cp example/hyprland.desktop $PKG/usr/share/wayland-sessions/
+#    install -Dm 0644 lbwlroots.so.* /usr/lib/
+    
+}
+
+

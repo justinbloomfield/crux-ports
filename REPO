@@ -37,6 +37,10 @@ d:ly
 d:tailscale
 d:websocketpp
 d:asio
+d:hyprland
+d:tomlplusplus
+d:libliftoff
+d:libdisplay-info
 f:d9b2f0b89c0890db4a88798c91d5d297:cadence/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:cadence/.md5sum
 f:b1323627e2da6904d374405f2897d289:cadence/.signature
@@ -175,3 +179,13 @@ f:10c45d0cdbdbef793b87155dac4a5943:websocketpp/.footprint
 f:67a1aee165177a29f0a9feb0c70c0b41:asio/.md5sum
 f:9f0b07d868fa680c67c545b1ab0adbba:asio/Pkgfile
 f:5f32fa82da96f46ebb286fa870c47c38:asio/.footprint
+f:ee1bf34503f750e689ca20a32310e02f:hyprland/Pkgfile
+f:140b49d7451deafea873907864836b6b:hyprland/.md5sum
+f:2ec2fec1e6b26429fd7fa337cc8e0c7e:hyprland/.footprint
+f:105d2e087591c7584401f42b7e44f84f:tomlplusplus/.md5sum
+f:0f9749da7f5c25f555e1821ce47b9eb6:tomlplusplus/Pkgfile
+f:883b78b60368b0540fe9f85440983a08:tomlplusplus/.footprint
+f:a8c8611056c114f5aa7031f4bcb8e5fd:libliftoff/.md5sum
+f:3aa730f42bbe60a16c2430607b3ff60c:libliftoff/Pkgfile
+f:22cca1dee8b5026ef20f5bb3e7ce7b8e:libliftoff/.footprint
+f:6ce5452d561201def516ea2f690a1e75:libdisplay-info/Pkgfile

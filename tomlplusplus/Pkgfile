@@ -1,0 +1,20 @@
+# -*-sh-*-
+# Description: Header-only TOML config file parser and serializer for C++
+# URL: https://marzer.github.io/tomlplusplus/
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: 
+
+name=tomlplusplus
+version=3.4.0
+release=1
+source=(https://github.com/marzer/$name/archive/refs/tags/v$version.tar.gz)
+
+build() {
+    cd $name-$version
+
+    meson setup build --prefix=/usr
+    ninja -C build
+    meson install -C build --destdir $PKG
+}
+
+
