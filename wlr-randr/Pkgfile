@@ -1,0 +1,20 @@
+# -*-sh-*-
+# Description: Utility to manage outputs of a Wayland compositor
+# URL: https://git.sr.ht/~emersion/wlr-randr
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: wayland wlroots
+
+name=wlr-randr
+version=0.4.0
+release=1
+source=(https://git.sr.ht/~emersion/$name/archive/v$version.tar.gz)
+
+build() {
+    cd $name-v$version
+
+    meson setup build --prefix=/usr
+    ninja -C build
+    meson install -C build --destdir $PKG
+}
+
+

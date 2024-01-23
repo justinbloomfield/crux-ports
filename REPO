@@ -41,6 +41,7 @@ d:hyprland
 d:tomlplusplus
 d:libliftoff
 d:libdisplay-info
+d:wlr-randr
 f:d9b2f0b89c0890db4a88798c91d5d297:cadence/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:cadence/.md5sum
 f:b1323627e2da6904d374405f2897d289:cadence/.signature
@@ -191,3 +192,6 @@ f:22cca1dee8b5026ef20f5bb3e7ce7b8e:libliftoff/.footprint
 f:6ce5452d561201def516ea2f690a1e75:libdisplay-info/Pkgfile
 f:159b8ac514f2b430203897a3b052bb7f:libdisplay-info/.md5sum
 f:0dc0b6debe672378e59fe53b02db362c:libdisplay-info/.footprint
+f:97a11938d4816551f31b19facfdfeae1:wlr-randr/Pkgfile
+f:96823662362c22773cfdaba1267d41a3:wlr-randr/.md5sum
+f:8d8bc5f56336cab354a7c1a4133168e5:wlr-randr/.footprint
