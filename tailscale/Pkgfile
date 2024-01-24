@@ -5,9 +5,9 @@
 # Depends on:go 
 
 name=tailscale
-version=1.54.1
+version=1.58.2
 release=1
-source=(https://github.com/$name/tailscale/archive/refs/tags/v$version.tar.gz
+source=(https://github.com/$name/$name/archive/refs/tags/v$version.tar.gz
         rc.tailscaled)
 
 build() {

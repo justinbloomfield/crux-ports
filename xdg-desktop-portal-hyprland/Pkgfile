@@ -1,0 +1,33 @@
+# -*-sh-*-
+# Description: XDG Desktop Portal for Hyprland
+# URL: https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: hyprland-protocols hyprlang libdrm pipewire sdbus-cpp wayland wayland-protocols 
+
+name=xdg-desktop-portal-hyprland
+version=git-4fc83e6
+sversion=4fc83e6
+release=1
+source=()
+
+gitsource=https://github.com/hyprwm/xdg-desktop-portal-hyprland
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone --recursive $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    cmake -DCMAKE_INSTALL_LIBEXECDIR=$PKG/usr/lib -DCMAKE_INSTALL_PREFIX=$PKG/usr -B build
+    cmake --build build
+    cmake --install build
+    
+}
+

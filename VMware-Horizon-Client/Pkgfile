@@ -4,25 +4,26 @@
 # Maintainer:  poq <jbloomfield at live dot com>
 # Depends on:  
 name=VMware-Horizon-Client
-version=2309.1-8.11.1-22775487
+version=2312-8.12.0-23149323
 release=1
-source=(https://download3.vmware.com/software/CART24FQ4_LIN_2309.1_TARBALL/$name-Linux-$version.tar.gz)
+source=(https://download3.vmware.com/software/CART24FQ4_LIN_2312_TARBALL/$name-Linux-$version.tar.gz)
 vmh=VMware-Horizon
 
 build() {
     cd $name-Linux-$version/x64
     tar xf $name-$version.x64.tar.gz
     cd $name-$version.x64/usr
-    mkdir -p $PKG/usr/{bin,lib,share/doc/vmware-horizon,share/locale}
-    install -D bin/* $PKG/usr/bin 
-    cp -ar lib/* $PKG/usr/lib
+    #    mkdir -p $PKG/usr/{bin,lib,share/doc/vmware-horizon,share/locale}
+    mkdir -p $PKG/usr/{,share}
+    cp -ar bin $PKG/usr/bin/
+    cp -ar lib $PKG/usr/lib/
     #install -D share/doc/* $PKG/usr/share/doc/vmware-horizon
-    cp -ar share/locale/* $PKG/usr/share/locale
-    install -D share/applications/* $PKG/usr/share/applications
+    cp -ar share/locale $PKG/usr/share/locale/
+    cp -ar share/applications $PKG/usr/share/applications/
     cd ../..
     tar xf $vmh-PCoIP-$version.x64.tar.gz 
     cd $vmh-PCoIP-$version.x64
-    cp -ar usr/lib/* $PKG/usr/lib    
+    cp -ar usr/lib $PKG/usr/lib    
 }
 
 

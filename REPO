@@ -42,6 +42,10 @@ d:tomlplusplus
 d:libliftoff
 d:libdisplay-info
 d:wlr-randr
+d:hyprlang
+d:hyprland-protocols
+d:xdg-desktop-portal-hyprland
+d:sdbus-cpp
 f:d9b2f0b89c0890db4a88798c91d5d297:cadence/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:cadence/.md5sum
 f:b1323627e2da6904d374405f2897d289:cadence/.signature
@@ -95,7 +99,7 @@ f:f15c609993eb6633f350fcc87abb08ef:nicotine-plus/Pkgfile
 f:5aae170dced41605072145bbec072eb7:obs-studio/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:obs-studio/.md5sum
 f:671079de8a981ad3a4cf1a96430efa46:obs-studio/.signature
-f:f73551f3024bdc7252a3cf0287b465e3:obs-studio/Pkgfile
+f:10876055beb242aa0fa423f8f7af308c:obs-studio/Pkgfile
 f:f047df8ba2de304871a1fb4ea20a65de:poq.httpup
 f:ad1d5170de30699ed4f8619befc6c733:poq.pub
 f:fdd20768202c19973d9074d9d61a3526:rdesktop/.footprint
@@ -127,9 +131,9 @@ f:5d10418e5e130726c99657b7d7532cac:windowchef/.footprint
 f:d9ef74a5ea3a9bac282aab9d8f3060a3:windowchef/.md5sum
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:windowchef/.signature
 f:d7087a5a7a0601d942475882be564d94:windowchef/Pkgfile
-f:cd617ed0ae8dca6f0a6aa576379da6a9:VMware-Horizon-Client/.footprint
-f:a80765d0b2e0c3f0121954e4dc968360:VMware-Horizon-Client/.md5sum
-f:e0abd517661f2e8bee87525859122255:VMware-Horizon-Client/Pkgfile
+f:5e753f60a8a1420357632bccae16b9e9:VMware-Horizon-Client/.footprint
+f:91fc87d733bd59552658487886c56ad7:VMware-Horizon-Client/.md5sum
+f:b7d1ceccee043b08fb22d4bca048977d:VMware-Horizon-Client/Pkgfile
 f:3a077c4141ccd9ce36e245dc29832664:ironbar/Pkgfile
 f:a55b9ae88b28aa96135ff7c6ac56b65d:ironbar/.footprint
 f:b6b408aaa8f00895e86138ae4ff7f2d2:ironbar/.md5sum
@@ -159,7 +163,7 @@ f:86f80328f81116b5b935575adbeb6e6a:nwg-drawer/.footprint
 f:73690a405e2f44e76f8e5e38f35ba47a:xeyes/.md5sum
 f:e50b4e9ed09d06889f32c7e9df4e9728:xeyes/Pkgfile
 f:cd07a399136b0836fccd509f84741dc8:xeyes/.footprint
-f:06dc757b9b790e01ebf87ab29b693e5d:nwg-displays/Pkgfile
+f:606f2e4e4c8d4703c4e0a7715d14f4e3:nwg-displays/Pkgfile
 f:d6f00ef23a4a4cba14caaa6a0d7faf01:nwg-displays/.md5sum
 f:39a619090d8992aa7fe2f6e58ac366ee:nwg-displays/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:chiaki/.md5sum
@@ -174,6 +178,7 @@ f:9ebfac2f37847bab0fa3a2be79adab1a:tailscale/Pkgfile
 f:bb9fa28deff67157800be76a333d951c:tailscale/.footprint
 f:eaaebf0734987093132b248f5eaea525:tailscale/.md5sum
 f:8d3c7fd8003609bfc3a87cc44cab4ee4:tailscale/rc.tailscaled
+f:0c7761a61defc9d35782f2d5ae0aa2fa:tailscale/.Pkgfile.swp
 f:1c442a95803f60f5e7583f1130a494d1:websocketpp/Pkgfile
 f:6709ad82347d0b282844a016cb9dd075:websocketpp/.md5sum
 f:10c45d0cdbdbef793b87155dac4a5943:websocketpp/.footprint
@@ -195,3 +200,15 @@ f:0dc0b6debe672378e59fe53b02db362c:libdisplay-info/.footprint
 f:97a11938d4816551f31b19facfdfeae1:wlr-randr/Pkgfile
 f:96823662362c22773cfdaba1267d41a3:wlr-randr/.md5sum
 f:8d8bc5f56336cab354a7c1a4133168e5:wlr-randr/.footprint
+f:4dec726eeb12b6798d1c6a7a8fde9a1e:hyprlang/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:hyprlang/.md5sum
+f:d2ac53119327695a3182bfa378a2a5bb:hyprlang/.footprint
+f:4012ed58f7fd1f0e4e1179cd94082bd8:hyprland-protocols/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:hyprland-protocols/.md5sum
+f:f6ec0587150ee1f1ba38a2fb39230c59:hyprland-protocols/.footprint
+f:ebe4b535cf6a9f0d793c9e926d0300cf:xdg-desktop-portal-hyprland/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:xdg-desktop-portal-hyprland/.md5sum
+f:de4d1a2233cdd34d014da7e0cad312e5:xdg-desktop-portal-hyprland/.footprint
+f:0cc625d0bab906f7d29803a27f436227:sdbus-cpp/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:sdbus-cpp/.md5sum
+f:621aab9293aca9187e72198d9c3538ac:sdbus-cpp/.footprint

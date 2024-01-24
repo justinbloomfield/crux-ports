@@ -1,0 +1,33 @@
+# -*-sh-*-
+# Description: Hypr configuration language
+# URL: https://hyprland.org/hyprlang
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: 
+
+name=hyprlang
+version=git-6f62e2d
+sversion=6f62e2d
+release=1
+source=()
+
+gitsource=https://github.com/hyprwm/hyprlang
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=${PKG}/usr -S . -B ./build
+    cmake --build ./build --config Release --target hyprlang
+    cmake --install ./build
+}
+
+

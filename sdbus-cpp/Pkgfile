@@ -1,0 +1,32 @@
+# -*-sh-*-
+# Description: C++ D-Bus library for Linux
+# URL: https://github.com/kistler-group/sdbus-cpp
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: basu 
+
+name=sdbus-cpp
+version=git-28921ad
+sversion=28921ad
+release=1
+source=()
+
+gitsource=https://github.com/kistler-group/sdbus-cpp
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    cmake -DBUILD_DOC=OFF -DCMAKE_INSTALL_LIBDIR=$PKG/usr/lib -DCMAKE_INSTALL_PREFIX=$PKG/usr -S . -B ./build
+    cmake --build ./build
+    cmake --build ./build --target install
+}
+

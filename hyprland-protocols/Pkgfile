@@ -1,0 +1,32 @@
+# -*-sh-*-
+# Description: Wayland protocol extension for Hyprland
+# URL: https://github.com/hyprwm/hyprland-protocols
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:  
+
+name=hyprland-protocols
+version=git-0c2ce70
+sversion=0c2ce70
+release=1
+source=()
+
+gitsource=https://github.com/hyprwm/hyprland-protocols
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    meson setup build --prefix=/usr
+    ninja -C build
+    meson install -C build --destdir $PKG
+}
+

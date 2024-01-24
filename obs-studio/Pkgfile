@@ -5,8 +5,8 @@
 # Depends on: ffmpeg x264 x265 freetype fontconfig qt6-wayland qt6-svg qt6-websockets swig luajit v4l-utils nlohmann-json mbedtls cups
 
 name=obs-studio
-version=git-f674d17
-sversion=f674d17
+version=git-b45a732
+sversion=b45a732
 release=1
 source=()
 
