@@ -1,18 +1,19 @@
 # -*-sh-*-
-# Description: Hypr configuration language
-# URL: https://hyprland.org/hyprlang
+# Description: Hyprland cursor format, library and utilities
+# URL: https://wiki.hyprland.org/Hypr-Ecosystem/hyprcursor/
 # Maintainer: poq <jbloomfield at live dot com>
-# Depends on: 
+# Depends on: hyprlang libzip
 
-name=hyprlang
-version=0.5.0
+name=hyprcursor
+version=0.1.4
 release=1
 source=(https://github.com/hyprwm/$name/archive/refs/tags/v$version.tar.gz)
 
 build() {
     cd $name-$version
+
     cmake --no-warn-unused-cli -DCMAKE_BUILD_TYPE:STRING=Release -DCMAKE_INSTALL_PREFIX:PATH=/usr -S . -B ./build
-    cmake --build ./build --config Release --target hyprlang
+    cmake --build ./build --config Release --target all
     DESTDIR=${PKG} cmake --install ./build
 }
 

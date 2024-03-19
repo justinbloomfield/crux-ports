@@ -1,8 +1,9 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/include/
 -rw-r--r--	root/root	usr/include/hyprlang.hpp
-drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libhyprlang.so
-drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/pkgconfig/
--rw-r--r--	root/root	usr/share/pkgconfig/hyprlang.pc
+drwxr-xr-x	root/root	usr/lib64/
+lrwxrwxrwx	root/root	usr/lib64/libhyprlang.so -> libhyprlang.so.2
+-rwxr-xr-x	root/root	usr/lib64/libhyprlang.so.0.5.0
+lrwxrwxrwx	root/root	usr/lib64/libhyprlang.so.2 -> libhyprlang.so.0.5.0
+drwxr-xr-x	root/root	usr/lib64/pkgconfig/
+-rw-r--r--	root/root	usr/lib64/pkgconfig/hyprlang.pc

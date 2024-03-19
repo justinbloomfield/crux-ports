@@ -1,0 +1,15 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/hyprcursor-util
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/hyprcursor.hpp
+drwxrwxrwx	root/root	usr/include/hyprcursor/
+-rw-r--r--	root/root	usr/include/hyprcursor/hyprcursor.h
+-rw-r--r--	root/root	usr/include/hyprcursor/hyprcursor.hpp
+-rw-r--r--	root/root	usr/include/hyprcursor/shared.h
+drwxr-xr-x	root/root	usr/lib64/
+lrwxrwxrwx	root/root	usr/lib64/libhyprcursor.so -> libhyprcursor.so.0
+lrwxrwxrwx	root/root	usr/lib64/libhyprcursor.so.0 -> libhyprcursor.so.0.1.4
+-rwxr-xr-x	root/root	usr/lib64/libhyprcursor.so.0.1.4
+drwxr-xr-x	root/root	usr/lib64/pkgconfig/
+-rw-r--r--	root/root	usr/lib64/pkgconfig/hyprcursor.pc
