@@ -1,0 +1,23 @@
+# -*-sh-*-
+# Description: Dynamic tiling Wayland compositor
+# URL: https://isaacfreund.com/software/river
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on:zig wayland wayland-protocols wlroots libxkbcommon xorg-libevdev xorg-libpixman 
+# Optional: xorg-xwayland
+name=river
+version=0.3.0
+release=1
+source=(https://codeberg.org/$name/river/releases/download/v$version/river-0.3.0.tar.gz)
+
+build() {
+    cd $name-$version
+    
+    prt-get isinst xorg-xwayland || PGKMK_RIVER+='-Dxwayland'
+    DESTDIR=$PKG zig build $PKGMK_RIVER -Doptimize=ReleaseSafe --prefix /usr install
+
+    mkdir -p $PKG/usr/share/river/examples
+    cp example/init $PKG/usr/share/river/examples/init
+
+}
+
+

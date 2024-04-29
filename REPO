@@ -47,6 +47,9 @@ d:hyprland-protocols
 d:xdg-desktop-portal-hyprland
 d:sdbus-cpp
 d:hyprcursor
+d:river
+d:sandbar
+d:lswt
 f:d9b2f0b89c0890db4a88798c91d5d297:cadence/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:cadence/.md5sum
 f:b1323627e2da6904d374405f2897d289:cadence/.signature
@@ -81,8 +84,8 @@ f:5dee8d1f2b70369ac8120290202c0c44:herbstluftwm/.md5sum
 f:44fa498b4f0efe1f714bfedd6ec6d1fb:herbstluftwm/.signature
 f:25c62ee0c03cd99555c81be364225fcf:herbstluftwm/Pkgfile
 f:f5b1f54067794df694b0309310cc5376:hikari/.footprint
-f:cba9746b230f803613d3b83d17e069e4:hikari/.md5sum
-f:9ca2cc8822deaffe16034ea78c6a548a:hikari/Pkgfile
+f:ffb1237f67db077bd3b400f41b0927be:hikari/.md5sum
+f:aea5aa28690f07eb976ffa2945513ed3:hikari/Pkgfile
 f:94218308babde534028fcced9326d390:hplip/.md5sum
 f:b53069958060de6b654572db2180ef53:hplip/Pkgfile
 f:b235c9e7c41a8db460b4bbb1bb43b99f:libldm/.footprint
@@ -215,3 +218,12 @@ f:621aab9293aca9187e72198d9c3538ac:sdbus-cpp/.footprint
 f:31d69742b25fc434b178f8d2209d7956:hyprcursor/Pkgfile
 f:e3970cb434697f09845c12fe5e8d200e:hyprcursor/.md5sum
 f:2f37c0370b32acc7a8758779b9a7fa9d:hyprcursor/.footprint
+f:f15c063d7bcfea9214600efba109123d:river/Pkgfile
+f:d57a99efd91a03d7ad43b6fbe93d48f3:river/.md5sum
+f:4fd59c7973ba972ea7fac87588fdb9aa:river/.footprint
+f:83d4005cbc82c4ec03bde2b26270f6ba:sandbar/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:sandbar/.md5sum
+f:c61c52a4ccd06728410e5fa3e0e27e66:sandbar/.footprint
+f:2f4ad89b1cbf73e9936705bdb881be72:lswt/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:lswt/.md5sum
+f:a68dd5e6557a4aeb2e140d5bc1017e2f:lswt/.footprint

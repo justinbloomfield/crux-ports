@@ -1,0 +1,30 @@
+# -*-sh-*-
+# Description: dwm-like bar for river
+# URL: https://github.com/kolunmi/sandbar
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: wayland xorg-pixman fcft 
+
+name=sandbar
+version=git-4af3974
+sversion=4af3974
+release=1
+source=()
+
+gitsource=https://github.com/kolunmi/sandbar
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+

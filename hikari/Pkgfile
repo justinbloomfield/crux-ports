@@ -4,14 +4,14 @@
 # Depends on:wlroots xorg-xwayland libucl slurp wayland-protocols bmake
 
 name=hikari
-version=2.3.2
+version=2.3.3
 release=1
 source=(https://$name.acmelabs.space/releases/$name-$version.tar.gz)
 
 build() {
     cd $name-$version
 
-    bmake PREFIX=usr \
+    MAKESYSPATH=/usr/share/mk bmake PREFIX=usr \
           WITH_ALL=YES \
           ETC_PREFIX=/ \
           WITH_POSIX_C_SOURCE=YES 
@@ -20,7 +20,7 @@ build() {
 #          WITH_LAYERSHELL=YES 
 #          WITH_VIRTUAL_INPUT=YES 
 
-    bmake DESTDIR=$PKG ETC_PREFIX=/ PREFIX=/usr WITHOUT_SUID=YES install
+    MAKESYSPATH=/usr/share/mk bmake DESTDIR=$PKG ETC_PREFIX=/ PREFIX=/usr WITHOUT_SUID=YES install
           
 }
 

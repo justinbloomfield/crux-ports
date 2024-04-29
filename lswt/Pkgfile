@@ -1,0 +1,30 @@
+# -*-sh-*-
+# Description: List Wayland toplevels (windows)
+# URL: https://git.sr.ht/~lean_plickat/lswt
+# Maintainer: poq <jbloomfield at live dot com>
+# Depends on: wayland 
+
+name=lswt
+version=git-e0f5f7a
+sversion=e0f5f7a9
+release=1
+source=()
+
+gitsource=https://git.sr.ht/~leon_plickat/lswt
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+        git reset --hard
+        git pull $gitsource
+    else
+        git clone $gitsource $name
+        cd $name
+    fi
+
+    git checkout $sversion
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
+
